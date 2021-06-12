@@ -1,0 +1,19 @@
+body{
+    font-size: 16px;
+    margin:0px;
+    font-family: Arial;
+    background-color: #151515;
+    color:white;
+    font-family: Oswald;
+}
+
+.Default .base{
+    display: flex;
+}
+
+.Default .content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 15px;
+}

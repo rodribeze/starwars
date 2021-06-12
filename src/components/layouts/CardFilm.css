@@ -1,0 +1,37 @@
+.CardFilm {
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 1px solid #272b30;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    cursor:pointer;
+    text-decoration: none;
+    color: white;
+
+}
+
+.CardFilm:hover{
+    background-color: #272a2d;
+    border-color: #FFE300;
+}
+
+.CardFilm h3{
+    color: #FFE300;
+}
+
+.CardFilm + .CardFilm{
+    margin-top: 10px;
+}
+
+.CardFilm .content{
+    display: flex;
+    flex: 1;
+}
+
+.CardFilm .desc{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,30 @@
+.Menu {
+    display: flex;
+    flex-basis: 250px;
+    padding: 15px;
+    align-items: baseline;
+}
+
+.Menu ul{
+    list-style: none;
+    display: flex;
+    flex: 1;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.Menu li {
+    flex: 1;
+    display: flex;
+    background-color: #272b30;
+}
+
+.Menu li a{
+    flex: 1;
+    padding: 5px;
+    text-decoration: none;
+    color:white;
+    padding: 15px 10px;
+}
