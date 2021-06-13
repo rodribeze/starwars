@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button is render 1`] = `
+<a
+  className="Button"
+  href="/films/1"
+  onClick={[Function]}
+>
+  Ver mais filmes
+</a>
+`;

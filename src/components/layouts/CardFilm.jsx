@@ -13,10 +13,10 @@ const CardFilm = props => {
     const filmId = filmIdRegex.exec(props.url)[1]
 
     return (
-        <Link class="CardFilm" to={`/films/${filmId}`}>
+        <Link className="CardFilm" to={`/films/${filmId}`}>
             <h3>{props.title}</h3>
-            <div class="desc">
-                <span class="episod">Ep. {props.episode_id}</span>
+            <div className="desc">
+                <span className="episod">Ep. {props.episode_id}</span>
                 <span className="release_date">{dateBr}</span>
             </div>
         </Link>

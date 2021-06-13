@@ -1,0 +1,13 @@
+.Films .search{
+    padding: 10px;
+    font-size: 1.4rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.Films .search:focus{
+    outline: none;
+}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { fetchFilms } from '../helpers/api'
 
-export const useFilms = () => {
+export const useFilms = (search) => {
 
     const [films, setFilms] = useState() 
     const [loading, setLoading] = useState(false) 
@@ -11,14 +11,14 @@ export const useFilms = () => {
         setLoading(true)
 
         const fetchData = async () => {
-            const response = await fetchFilms()
+            const response = await fetchFilms(search)
             setFilms(response)
             setLoading(false)
         }
 
         fetchData()
 
-    }, [])
+    }, [search])
     
     return [
         films,

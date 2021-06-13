@@ -3,7 +3,7 @@ import Default from '../../components/layouts/Default';
 import { useFilm } from '../../hooks/useFilm';
 import { useParams } from 'react-router-dom'
 import '../../components/layouts/Film.css'
-import { Link } from 'react-router-dom';
+import Button from '../../components/layouts/Button';
 
 const Film = props => {
 
@@ -19,7 +19,7 @@ const Film = props => {
                         <h2>{film.title}</h2>
                         <p>{film.opening_crawl}</p>
                         <br/>
-                        <Link to="/" class="more_films">Ver Outros Filmes</Link>
+                        <Button to="/">Ver Outros Filmes</Button>
                     </div>
                 ) : 'Carregando...'
             }

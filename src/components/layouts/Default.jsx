@@ -4,7 +4,7 @@ import Header from './Header';
 import './Default.css'
 
 const Default = props => {
-    return <div class="Default">
+    return <div className="Default">
         <Header />
         <div className="base">
             <div className="content">
