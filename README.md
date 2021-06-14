@@ -27,5 +27,5 @@ O projeto será criado dentro da pasta `build`
 ### `Tests`
 Para testar os componentes execute os comandos abaixo:
 ```cmd
-yarn start
+yarn test
 ```
