@@ -22,3 +22,9 @@ export const fetchFilmById = async (id) => {
     const json = await response.json()
     return json;
 } 
+
+export const fetchPeopleById = async (id) => {
+    const response = await fetch(`${base}/people/${id}/`)
+    const json = await response.json()
+    return json;
+} 
