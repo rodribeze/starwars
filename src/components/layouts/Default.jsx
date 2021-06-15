@@ -9,6 +9,9 @@ const Default = props => {
         <Header />
         <ul class="links">
             <li>
+                <Link to="/">Todos os filmes</Link>
+            </li>
+            <li>
                 <Link to="/people/1">Luke Skywalker</Link>
             </li>
             <li>

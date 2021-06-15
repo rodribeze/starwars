@@ -3,8 +3,8 @@ import { fetchPeoples } from '../helpers/api'
 
 export const usePeopleMaisVezes = () => {
 
-    const [peoples,setPeoples] = useState()
-    const [loading,setLoading] = useState(true)
+    const [peoples, setPeoples] = useState()
+    const [loading, setLoading] = useState(true)
 
     useEffect(function(){
 
