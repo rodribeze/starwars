@@ -12,6 +12,12 @@ const CardFilm = props => {
     const filmIdRegex = /http:\/\/swapi\.dev\/api\/films\/([0-9]{1,})\//;
     const filmId = filmIdRegex.exec(props.url)[1]
 
+    const option = {
+        dateStyle: 'full'
+    }
+    const locale = 'pt-br'
+    const dateEdited = new Date(props.edited).toLocaleDateString( locale, option)
+
     return (
         <Link className="CardFilm" to={`/films/${filmId}`}>
             <h3>{props.title}</h3>
@@ -19,6 +25,7 @@ const CardFilm = props => {
                 <span className="episod">Ep. {props.episode_id}</span>
                 <span className="release_date">{dateBr}</span>
             </div>
+            <p><strong>Última edição:</strong> {dateEdited}</p>
         </Link>
     );
 }
