@@ -28,3 +28,9 @@ export const fetchPeopleById = async (id) => {
     const json = await response.json()
     return json;
 } 
+
+export const fetchPeoples = async (id) => {
+    const response = await fetch(`${base}/people/`)
+    const json = await response.json()
+    return json;
+} 

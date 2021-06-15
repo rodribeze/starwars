@@ -4,17 +4,21 @@ import { Switch, Route } from 'react-router-dom';
 import Films from '../../views/films/Films';
 import Film from '../../views/films/Film';
 import People from '../../views/films/People';
+import PeopleMaisVezes from '../../views/films/PeopleMaisVezes';
 
 const Content = props => {
     return (
         <Switch>
-            <Route path="/films/:id">
+            <Route exact path="/peoples/maisvezes">
+                <PeopleMaisVezes />
+            </Route>
+            <Route exact path="/films/:id">
                 <Film />
             </Route>
-            <Route path="/people/:id">
+            <Route exact path="/people/:id">
                 <People />
             </Route>
-            <Route path="/">
+            <Route exact path="/">
                 <Films />
             </Route>
         </Switch>

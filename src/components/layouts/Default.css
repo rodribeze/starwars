@@ -21,8 +21,13 @@ body{
 .Default .links{
     list-style: none;
     padding: 10px 15px;
+    display: flex;
 
 }
+.Default .links li +  li{
+    margin-left: 5px;
+}
+
 .Default .links a {
     text-decoration: none;
     color: white;

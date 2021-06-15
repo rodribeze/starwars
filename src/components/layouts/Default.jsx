@@ -11,6 +11,9 @@ const Default = props => {
             <li>
                 <Link to="/people/1">Luke Skywalker</Link>
             </li>
+            <li>
+                <Link to="/peoples/maisvezes">Personagens mais vezes aparecem</Link>
+            </li>
         </ul>
         <div className="base">
             <div className="content">
